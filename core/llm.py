@@ -6,9 +6,16 @@ load_dotenv()
 
 class JournalLLM:
     def __init__(self):
+        # check st.secrets first (Streamlit Cloud), then .env / os env
         api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise ValueError("GROQ_API_KEY not found")
+            try:
+                import streamlit as st
+                api_key = st.secrets.get("GROQ_API_KEY")
+            except Exception:
+                pass
+        if not api_key:
+            raise ValueError("GROQ_API_KEY not found — set it in .env or Streamlit Secrets")
 
         self.client = Groq(api_key=api_key)
 
