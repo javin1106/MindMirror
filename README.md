@@ -38,7 +38,7 @@ If you’re just saying “hi” or chatting casually, it switches to a **light 
 ## Tech Stack
 
 - **Frontend / App:** Streamlit  
-- **Emotion Model:** TensorFlow / Keras  
+- **Emotion Model:** TensorFlow / Keras - A Custom BiLSTM Model
 - **Embeddings + Retrieval:** sentence-transformers + FAISS  
 - **LLM Provider:** Groq  
 - **Utilities:** python-dotenv, numpy, scikit-learn  
