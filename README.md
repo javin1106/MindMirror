@@ -123,6 +123,13 @@ streamlit run app.py
 
 ---
 
+## Dataset Acknowledgment
+
+This project uses the **Emotions Dataset for NLP** from Kaggle for emotion classification training/evaluation:
+
+- https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp
+---
+
 ## Notes & Disclaimer
 
 MindMirror is a reflection tool—not a substitute for professional mental health care.  
