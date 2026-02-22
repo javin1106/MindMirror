@@ -1,0 +1,9 @@
+streamlit
+tensorflow
+keras
+groq
+python-dotenv
+faiss-cpu
+sentence-transformers
+numpy
+scikit-learn
